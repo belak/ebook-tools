@@ -18,7 +18,7 @@
       flake-parts,
     }:
     flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = [ "x86_64-linux" ];
+      systems = nixpkgs.lib.systems.flakeExposed;
 
       perSystem =
         { pkgs, system, ... }:
@@ -32,9 +32,8 @@
 
           devShells.default = pkgs.mkShell {
             nativeBuildInputs = [
-              pkgs.rust-bin.stable."1.78.0".default
+              pkgs.rust-bin.stable."1.93.0".default
               pkgs.rust-analyzer
-              pkgs.sqlx-cli
             ];
           };
         };
