@@ -1,3 +1,35 @@
-[workspace]
-resolver = "2"
-members = ["ebook-drm", "ebook-info"]
+[package]
+name = "ebook-tools"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "ebook-drm"
+path = "src/bin/ebook-drm/main.rs"
+
+[[bin]]
+name = "ebook-info"
+path = "src/bin/ebook-info/main.rs"
+
+[[bin]]
+name = "ebook-convert"
+path = "src/bin/ebook-convert/main.rs"
+
+[[bin]]
+name = "ebook-edit"
+path = "src/bin/ebook-edit/main.rs"
+
+[dependencies]
+# Error handling
+anyhow = "1.0"
+thiserror = "2.0"
+
+# CLI
+clap = { version = "4.5", features = ["derive"] }
+env_logger = "0.11"
+log = "0.4"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
