@@ -5,11 +5,11 @@ and a GUI intended to replace Calibre for simple use-cases.
 
 ## Command Line Tools
 
-- [ ] `ebook-info` - debugging tool to extract information from an ebook
-- [ ] `ebook-edit` - tool for making simple edits to ebooks
 - [ ] `ebook-convert` - tool to convert an ebook between formats
-- [ ] `ebook-sync` - sync a folder or collection of ebooks to a target device
 - [ ] `ebook-drm` - tool for cleaning DRM from ebooks
+- [ ] `ebook-edit` - tool for making simple edits to ebooks
+- [ ] `ebook-info` - debugging tool to extract information from an ebook
+- [ ] `ebook-sync` - sync a folder or collection of ebooks to a target device
 
 ## Format Support
 
@@ -17,6 +17,9 @@ For general book support, we aim to handle the most common formats.
 
 - [ ] epub
 - [ ] kepub
+
+The following may be supported later, but are a lower priority.
+
 - [ ] mobi
 - [ ] azw3
 
@@ -25,11 +28,6 @@ For DRM, this focuses on cleaning ebooks which have been purchased.
 - [ ] acsm (for converting to epub)
 - [ ] acsm (for converting to pdf)
 - [ ] kobo-protected epub
-
-## Edit Operations
-
-- [ ] Modify metadata
-- [ ] Modify cover
 
 ## Device Support
 
