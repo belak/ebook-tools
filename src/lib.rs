@@ -1,10 +1,12 @@
 mod drm;
+pub mod epub;
 mod error;
 mod format;
 mod metadata;
 mod traits;
 
 pub use drm::{DrmScheme, DrmStatus};
+pub use epub::EpubBook;
 pub use error::{Error, Result};
 pub use format::Format;
 pub use metadata::Metadata;
